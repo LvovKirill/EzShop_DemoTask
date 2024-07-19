@@ -1,0 +1,178 @@
+@import "../../shared/style/variables.scss";
+
+.main{
+    margin-inline: 14px;
+    background-color: rgb(231, 231, 231);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header{
+    margin-top: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.author{
+    display: flex;
+    flex-direction: row;
+    height: min-content;
+}
+
+.img_author{
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+.info_author{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6px;
+}
+
+.name_author{
+    font-family: $montserrat-semi-bold;
+    font-size: 14px;
+    color: black;
+}
+
+.nik_author{
+    font-family: $montserrat-regular;
+    font-size: 11px;
+    color: rgb(107, 107, 107);
+}
+
+.tg_link{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.menu_item{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+    text-align: center;
+}
+
+.menu_item_icon{
+    width: 67px;
+    height: 67px;
+}
+
+.menu_item_name{
+    font-family: $montserrat-medium;
+    font-size: 11px;
+    color: (107, 107, 107);
+    max-width: 67px;
+}
+
+.our_shop{
+    margin-top: 22px;
+    font-size: 20px;
+    font-family: $montserrat-bold;
+    color: black;
+}
+
+.our_shop_info{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-items: center;
+    justify-self: stretch;
+    margin-top: 69px;
+}
+
+.our_shop_img_none{
+    width: 143px;
+    height: 143px;
+}
+
+.our_lable_1_none{
+    font-family: $montserrat-bold;
+    font-size: 15px;
+    color: black;
+    margin-top: 34px;
+}
+
+.our_lable_2_none{
+    font-family: $montserrat-medium;
+    font-size: 12px;
+    color: rgb(107, 107, 107);
+    margin-top: 34px;
+    margin-top: 11px;
+}
+
+.create_shop_button{
+    height: 48px;
+    border-radius: 15px;
+    background-color: rgb(84, 188, 246);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $montserrat-semi-bold;
+    font-size: 15px;
+    position: absolute;
+    bottom: 19px;
+    left: 16px;
+    right: 16px;
+}
+
+
+.our_lable_1_exist{
+    font-family: $montserrat-bold;
+    font-size: 15px;
+    color: black;
+    margin-top: 34px;
+}
+
+.our_shop_status{
+    font-family: $montserrat-medium;
+    font-size: 12px;
+    color: rgb(38, 164, 58);
+    margin-top: 34px;
+    margin-top: 11px;
+}
+
+.stop_shop_button{
+    height: 48px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $montserrat-semi-bold;
+    font-size: 15px;
+    position: absolute;
+    bottom: 19px;
+    left: 16px;
+    right: 16px;
+}
+
+.shop_item{
+    height: 48px;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: $montserrat-semi-bold;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+
+

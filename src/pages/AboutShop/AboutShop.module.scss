@@ -1,0 +1,65 @@
+@import "../../shared/style/variables.scss";
+
+.about_shop{
+    margin-inline: 14px;
+}
+
+.shop_name{
+    font-size: 20px;
+    font-family: $montserrat-bold;
+    margin-top: 22px;
+}
+
+.block_title{
+    font-family: $montserrat-semi-bold;
+    font-size: 14px;
+    margin-top: 26px;
+    color: rgb(107, 107, 107);
+}
+
+.block{
+    border-radius: 15px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+.block_item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 38px;
+    padding-inline: 14px;
+    align-items: center;
+}
+
+.block_left_content{
+    display: flex;
+    flex-direction: row;
+}
+
+.left_icon{
+    height: 17px;
+}
+
+.right_icon{
+    height: 13px;
+}
+
+.separator{
+    height: 1px;
+    background-color: rgb(217, 217, 217);
+}
+
+.block_text{
+    margin-left: 6px;
+    font-family: $montserrat-medium;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+
