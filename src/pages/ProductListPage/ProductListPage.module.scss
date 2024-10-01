@@ -1,0 +1,163 @@
+@import "../../shared/style/variables.scss";
+
+.main_content{
+    margin-inline: 16px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    margin-top: 23px;
+    margin-bottom: 37px;
+    justify-content: space-between;
+}
+
+.title{
+    font-family: $roboto-bold;
+    font-size: $font-size-2;
+}
+
+.right_icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.table_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.checkbox{
+    margin-inline: 13px;
+}
+
+.table_title_name{
+    font-family: $roboto-regular;
+    font-size: $font-size-1;
+    color: $blue-color;
+    text-wrap: wrap;
+    display: flex;
+    text-align: center;
+    width: 47%;
+    justify-content: start;
+}
+
+.table_title_id{
+    font-family: $roboto-regular;
+    font-size: $font-size-1;
+    color: $blue-color;
+    text-wrap: wrap;
+    display: flex;
+    text-align: center;
+    width: 10%;
+    justify-content: center;
+}
+
+.table_title_count{
+    font-family: $roboto-regular;
+    font-size: $font-size-1;
+    color: $blue-color;
+    text-wrap: wrap;
+    display: flex;
+    text-align: center;
+    width: 19%;
+    justify-content: center;
+}
+
+.separator{
+    background-color: $gray-color;
+    width: 2px;
+    height: 29px;
+    margin-inline: 10px;
+}
+
+.trash{
+    width: 14px;
+    margin-inline: 17px;
+}
+
+.product_list_scroll{
+    display: flex;
+    overflow-y: scroll;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    flex-direction: row;
+    scrollbar-width: none;
+    height: 100vh;
+    margin-top: 15px;
+}
+
+.product_list{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    gap: 14px;
+    padding-top: 14px;
+    padding-bottom: 200px;
+    flex-grow: 1;
+
+}
+
+.bottom_container{
+    display: flex;
+    flex-direction: row;
+    padding-inline: 16px;
+    padding-block: 6px;
+    gap: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--gray_5_color);
+    justify-content: stretch;
+}
+
+.delete_btn{
+    background-color: var(--gray_3_color);
+    color: var(--red_color);
+    font-family: $roboto-medium;
+    font-size: $font-size-5;
+    height: 50px;
+    flex-grow: 1;
+    border-radius: var(--btn_radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit_btn{
+    background-color: var(--blue_color);
+    color: var(--button_text_color);
+    font-family: $roboto-medium;
+    font-family: $roboto-medium;
+    font-size: $font-size-5;
+    width: max-content;
+    height: 50px;
+    flex-grow: 1;
+    border-radius: var(--btn_radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

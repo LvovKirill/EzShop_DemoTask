@@ -64,6 +64,7 @@
     gap: 6px;
     align-items: center;
     text-align: center;
+    overflow: visible;
 }
 
 .menu_item_icon{
@@ -76,6 +77,7 @@
     font-size: 11px;
     color: (107, 107, 107);
     max-width: 67px;
+    overflow: visible;
 }
 
 .our_shop{
@@ -118,6 +120,7 @@
     height: 48px;
     border-radius: 15px;
     background-color: rgb(84, 188, 246);
+    // background-color: var(--tg-theme-button-color);
     display: flex;
     align-items: center;
     justify-content: center;

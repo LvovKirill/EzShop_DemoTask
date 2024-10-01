@@ -4,17 +4,38 @@ import menuIcon2 from '../../shared/icon/menu/menu_2.svg';
 import menuIcon3 from '../../shared/icon/menu/menu_3.svg';
 import menuIcon4 from '../../shared/icon/menu/menu_4.svg';
 import menuIcon5 from '../../shared/icon/menu/menu_5.svg';
-import ava from "../../shared/images/ava.png"
+// import ava from "../../shared/images/ava.png"
+import none_ava_icon from '../../shared/icon/none_ava_icon.svg'
 import confetti_img from "../../shared/images/confetti_img.png"
 import good_status_img from "../../shared/images/good_status_img.png"
 import tg_logo from "../../shared/icon/tg_logo.svg"
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+// import { parseInitData } from '@telegram-apps/sdk';
+// import { TelegramClient } from '@telegram-apps/sdk-react';
+// import { retrieveLaunchParams } from '@telegram-apps/sdk';
+// import { initBackButton } from '@telegram-apps/sdk';
 
 function Main() {
 
+// const [backButton] = initBackButton();
+// backButton.hide();
+
 const [existShop, setExistShop] = useState(false)
 const navigate = useNavigate();
+
+// const {initData} = retrieveLaunchParams().initData.user.firstName;
+
+// let firstName = retrieveLaunchParams().initData.user.firstName;
+// let photoUrl = retrieveLaunchParams().initData.user.photoUrl;
+// let username = retrieveLaunchParams().initData.user.username;
+
+let firstName = "Имя";
+let photoUrl = null;
+let username = "Фамилия";
+
+console.log(photoUrl)
+
 
   return (
     <div className={styles.main}>
@@ -24,10 +45,10 @@ const navigate = useNavigate();
         <div className={styles.header}>
 
             <div className={styles.author}>
-                <img className={styles.img_author} src={ava}></img>
+                <img className={styles.img_author} src={photoUrl ? photoUrl : none_ava_icon}></img>
                 <div className={styles.info_author}>
-                    <p className={styles.name_author}>Дарья</p>
-                    <p className={styles.nik_author}>@darinitg</p>
+                    <p className={styles.name_author}>{firstName}</p>
+                    <p className={styles.nik_author}>@{username}</p>
                 </div>
             </div>
 
@@ -85,7 +106,7 @@ const navigate = useNavigate();
             <p className={styles.our_lable_2_none}>Здесь будут ваши магазины</p>
         </div>
 
-        <div className={styles.create_shop_button} onClick={() => setExistShop(true)}>Добавить магазин</div>
+        <div className={styles.create_shop_button} onClick={() => {setExistShop(true);}}>Добавить магазин</div>
         </>
         :
         <>

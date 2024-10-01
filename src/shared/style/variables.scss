@@ -1,10 +1,53 @@
 // цвета
 
+$bg-color: rgb(239, 239, 244);
+
 $base-color: rgb(255, 255, 255);
 
+$blue-color: rgb(0, 122, 255);
+
+$gray-color: rgb(221, 221, 224);
+
+:root {
+	--accent_color: rgb(158, 220, 255);
+
+	--bg_color: rgba(255, 255, 255);
+	--text_color: rgb(0, 0, 0);
+	--hint_color: rgb(0, 0, 0, 0);
+	--link_color: rgb(0, 0, 0, 0);
+	--button_color: rgb(158, 220, 255);
+	--button_text_color: rgba(255, 255, 255);
+	--secondary_bg_color: rgb(0, 0, 0, 0);
+	--header_bg_color: rgb(0, 0, 0);
+	--accent_text_color: rgb(0, 0, 0);
+	--section_bg_color: rgb(0, 0, 0, 0);
+	--section_header_text_color: rgb(0, 0, 0);
+	--section_separator_color: rgb(0, 0, 0, 0);
+	--subtitle_text_color: rgb(0, 0, 0);
+	--destructive_text_color: rgb(0, 0, 0);
+
+	--gray_color: rgb(162, 172, 176);
+	--green_color: rgb(53, 229, 85);
+	--red_color: rgb(229, 57, 53);
+	--blue_color: rgb(0, 122, 255);
+	--gray_text_color: rgb(112, 117, 121);
+	--gray_2_color: rgb(221, 221, 224);
+	--gray_3_color: rgb(0, 0, 0, 0.04);
+	--gray_4_color: rgb(217, 217, 217);
+	--gray_5_color: rgb(255, 255, 255);
+
+	.icon{
+        fill: var(--text_color);
+    }
+
+	--btn_radius: 18px;
+
+}
 
 
 // шрифты
+
+//montserrat
 
 $montserrat-semi-bold: 'MontserratSemiBold';
 @font-face {
@@ -30,12 +73,43 @@ $montserrat-medium: 'MontserratMedium';
 	src: url(../fonts/Montserrat/Montserrat-Medium.ttf) format('truetype'); 
 }
 
+//roboto
+
+$roboto-bold: 'RobotoBold';
+@font-face {
+	font-family: 'RobotoBold'; 
+	src: url(../fonts/Roboto/Roboto-Bold.ttf) format('truetype'); 
+}
+
+$roboto-regular: 'RobotoRegular';
+@font-face {
+	font-family: 'RobotoRegular'; 
+	src: url(../fonts/Roboto/Roboto-Regular.ttf) format('truetype'); 
+}
+
+$roboto-medium: 'RobotoMedium';
+@font-face {
+	font-family: 'RobotoMedium'; 
+	src: url(../fonts/Roboto/Roboto-Medium.ttf) format('truetype'); 
+}
+
+
+
+
 // размер шрифтов
 
 $font-size-1: 14px;
+$font-size-2: 20px;
+$font-size-3: 16px;
+$font-size-4: 15px;
+$font-size-5: 17px;
+$font-size-6: 15px;
+$font-size-7: 12px;
 
 
 //радиусы
+
+$btn-radius-1: 14px;
 
 $block-radius-1: 14px;
 

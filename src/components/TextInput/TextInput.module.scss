@@ -1,0 +1,86 @@
+@import "../../shared/style/variables.scss";
+
+
+.input_container{
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+}
+
+
+.title_container{
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    position: absolute;
+    left: 14px;
+    background-color: var(--bg_color);
+    top: -2px;
+    padding-inline: 8px;
+}
+
+
+.title{
+    font-family: $roboto-medium;
+    font-size: $font-size-6;
+    color: var(--gray_text_color);
+}
+
+
+.required{
+    font-family: $roboto-medium;
+    font-size: $font-size-6;
+    color: var(--red_color);
+}
+
+
+.input{
+
+    border: none;
+    outline: none;
+    background-color: var(--bg_color);
+    border: 2px solid var(--gray_3_color);
+    border-radius: 17px;
+    padding: 10px;
+    padding-right: 14px;
+    padding-left: 20px;
+    padding-block: 9px;
+    margin: 0;
+    box-shadow: none;
+    font-family: $roboto-regular;
+    font-size: $font-size-3;
+    color: var(--text_color);
+    min-width: 10px;
+    flex-grow: 1;
+
+    &::placeholder {
+        color: gray;
+    }
+
+}
+
+.input:focus{
+    border: 2px solid var(--blue_color);
+}
+
+.title_container .input:focus + .title {
+    color: var(--blue_color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
